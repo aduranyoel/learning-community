@@ -1,0 +1,8 @@
+.icon-box h3 {
+    color: #545454;
+    transition: 0.3s;
+}
+
+.icon-box:hover h3 {
+    color: white;
+}

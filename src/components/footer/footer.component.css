@@ -1,0 +1,11 @@
+#footer .container .copyright {
+    text-align: left !important;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+#footer .container .copyright .slogan {
+    display: flex;
+    flex-direction: column;
+    padding-left: 8px;
+}
