@@ -1,0 +1,16 @@
+.not-found {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.not-found .content {
+    margin: auto;
+}
+.not-found .content img {
+    display: block;
+    margin-bottom: 16px;
+}

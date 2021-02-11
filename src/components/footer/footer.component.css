@@ -9,3 +9,6 @@
     flex-direction: column;
     padding-left: 8px;
 }
+.copyright img {
+    width: 50px;
+}

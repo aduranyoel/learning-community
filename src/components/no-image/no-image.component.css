@@ -1,0 +1,12 @@
+.no-image-found {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: calc(50% - 2rem);
+    color: #999;
+    opacity: 0.5;
+}
+.no-image-found i {
+    display: block;
+    font-size: 2rem;
+}

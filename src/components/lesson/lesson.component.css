@@ -1,0 +1,16 @@
+.video-content {
+    margin: 0 auto;
+    height: 30rem;
+    background: black;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    position: relative;
+}
+.spinner-container {
+    width: 100%;
+    position: absolute;
+}
+.accordion-button {
+    text-align: left;
+}
