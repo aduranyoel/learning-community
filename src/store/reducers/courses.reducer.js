@@ -1,4 +1,5 @@
 import {COURSES_TYPES} from "../actions/courses.action";
+import {setStorage} from "../../share/utils";
 
 const initialState = Array(4).fill({
     name: 'loading',
@@ -12,6 +13,7 @@ const initialState = Array(4).fill({
 export function courses(state = initialState, action) {
     switch (action.type) {
         case COURSES_TYPES.LOAD:
+            setStorage('courses', action.payload);
             return action.payload;
         default:
             return state;

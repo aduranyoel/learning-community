@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {childrenSorted, http, useQuery} from "../../share/utils";
+import {childrenSorted, getStorage, http, useQuery} from "../../share/utils";
 import './lesson.component.css';
 import {useSelector} from "react-redux";
 import {selectCourse} from "../../store/reducers/courses.reducer";
@@ -22,7 +22,7 @@ export function Lesson() {
             name: 'loading'
         })
     });
-
+    const currentCourseSession = active?.split('/').slice(-2, -1).join();
 
     useEffect(() => {
         if (!active) return;
@@ -80,10 +80,10 @@ export function Lesson() {
                             <div className="accordion" id="accordionCourse">
                                 {
                                     course && Array.isArray(course.children) ?
-                                        childrenSorted(course.children).map((c, i) =>
+                                        childrenSorted(course.children).map(c =>
                                             <AccordionItemCourse key={uuid()}
                                                                  id={uuid()}
-                                                                 expanded={i === 0}
+                                                                 expanded={c.nodeId === currentCourseSession}
                                                                  idAccordion="accordionCourse"
                                                                  title={c.name}
                                                                  children={c.children}

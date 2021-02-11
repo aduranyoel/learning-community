@@ -3,13 +3,14 @@ import {useHistory} from 'react-router-dom';
 import './accprdion-item-course.component.css';
 import {v4 as uuid} from 'uuid';
 import play from '../../assets/img/play-circle-solid.svg';
+import {useQuery} from "../../share/utils";
 
 export function AccordionItemCourse({expanded, id, idAccordion, title, loading, children = [], pathCourse, setActive}) {
     const history = useHistory();
-    const sanitizeName = name => {
-        const piece = name.split('.');
-        return piece.slice(1, 2);
-    };
+    const query = useQuery();
+
+    const sanitizeName = name => name?.split('.').slice(1, -1).join('.');
+    const isLessonActive = nodeId => query.get('a')?.split('/').slice(-1).join() === nodeId;
 
     function handleActive(nodeId) {
         const active = `${pathCourse}/${nodeId}`;
@@ -36,7 +37,10 @@ export function AccordionItemCourse({expanded, id, idAccordion, title, loading, 
                                 <li key={uuid()}>
                                     <div>
                                         <img src={play} alt="play"/>
-                                        <span onClick={() => handleActive(c.nodeId)}>{sanitizeName(c.name)}</span>
+                                        <span
+                                            onClick={() => handleActive(c.nodeId)}
+                                            className={`${isLessonActive(c.nodeId) ? 'active' : ''}`}
+                                        >{sanitizeName(c.name)}</span>
                                     </div>
                                 </li>
                             )

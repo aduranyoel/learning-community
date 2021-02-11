@@ -40,7 +40,7 @@
     font-family: "Poppins", sans-serif;
 }
 
-.accordion-body ul li span:hover {
+.accordion-body ul li span:hover, .accordion-body ul li span.active {
     color: #e96b56;
 }
 
