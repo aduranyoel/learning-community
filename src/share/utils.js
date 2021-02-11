@@ -1,7 +1,7 @@
 import {useLocation} from 'react-router-dom';
 
 export function http(...params) {
-    const baseUrl = 'http://localhost:3001/';
+    const baseUrl = 'https://learning-community-web.herokuapp.com/';
     params[0] = baseUrl + params[0];
     return fetch.apply(this, params);
 }
