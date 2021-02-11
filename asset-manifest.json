@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/learning-community/static/css/main.4c166b0f.chunk.css",
-    "main.js": "/learning-community/static/js/main.86fef742.chunk.js",
-    "main.js.map": "/learning-community/static/js/main.86fef742.chunk.js.map",
+    "main.css": "/learning-community/static/css/main.c770c99c.chunk.css",
+    "main.js": "/learning-community/static/js/main.9cf24e6c.chunk.js",
+    "main.js.map": "/learning-community/static/js/main.9cf24e6c.chunk.js.map",
     "runtime-main.js": "/learning-community/static/js/runtime-main.e4a0432e.js",
     "runtime-main.js.map": "/learning-community/static/js/runtime-main.e4a0432e.js.map",
     "static/css/2.d65fdcc0.chunk.css": "/learning-community/static/css/2.d65fdcc0.chunk.css",
@@ -12,10 +12,11 @@
     "static/js/3.cff1c20e.chunk.js.map": "/learning-community/static/js/3.cff1c20e.chunk.js.map",
     "index.html": "/learning-community/index.html",
     "static/css/2.d65fdcc0.chunk.css.map": "/learning-community/static/css/2.d65fdcc0.chunk.css.map",
-    "static/css/main.4c166b0f.chunk.css.map": "/learning-community/static/css/main.4c166b0f.chunk.css.map",
+    "static/css/main.c770c99c.chunk.css.map": "/learning-community/static/css/main.c770c99c.chunk.css.map",
     "static/js/2.474cb0af.chunk.js.LICENSE.txt": "/learning-community/static/js/2.474cb0af.chunk.js.LICENSE.txt",
     "static/media/219px-Definition_of_Free_Cultural_Works_logo_notext.svg.0a9f9783.png": "/learning-community/static/media/219px-Definition_of_Free_Cultural_Works_logo_notext.svg.0a9f9783.png",
     "static/media/backgroud.70f8b048.jpg": "/learning-community/static/media/backgroud.70f8b048.jpg",
+    "static/media/camera-solid.f79d7868.svg": "/learning-community/static/media/camera-solid.f79d7868.svg",
     "static/media/play-circle-solid.658d5ba8.svg": "/learning-community/static/media/play-circle-solid.658d5ba8.svg",
     "static/media/search-solid.a8b7c5d7.svg": "/learning-community/static/media/search-solid.a8b7c5d7.svg",
     "static/media/undraw_server_down_s4lk.43dea224.svg": "/learning-community/static/media/undraw_server_down_s4lk.43dea224.svg"
@@ -24,7 +25,7 @@
     "static/js/runtime-main.e4a0432e.js",
     "static/css/2.d65fdcc0.chunk.css",
     "static/js/2.474cb0af.chunk.js",
-    "static/css/main.4c166b0f.chunk.css",
-    "static/js/main.86fef742.chunk.js"
+    "static/css/main.c770c99c.chunk.css",
+    "static/js/main.9cf24e6c.chunk.js"
   ]
 }
