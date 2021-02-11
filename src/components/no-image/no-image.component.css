@@ -6,7 +6,9 @@
     color: #999;
     opacity: 0.5;
 }
-.no-image-found i {
+.no-image-found img {
     display: block;
-    font-size: 2rem;
+    position: static !important;
+    width: 2rem !important;
+    margin: auto;
 }

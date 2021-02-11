@@ -11,7 +11,7 @@ import {Footer} from "./components/footer/footer.component";
 export default function App() {
     return (
         <>
-            <Router>
+            <Router basename="learning-community">
                 <Switch>
                     <Route exact path="/" component={Home}/>
                     <Route exact path="/lesson" component={Lesson}/>
