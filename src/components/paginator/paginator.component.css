@@ -1,0 +1,6 @@
+.blog-pagination ul li a.navigate {
+    font-weight: bold;
+}
+.blog-pagination ul li.disabled {
+    pointer-events: none;
+}

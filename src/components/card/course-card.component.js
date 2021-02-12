@@ -4,7 +4,7 @@ import './card.component.css';
 import {childrenSorted} from "../../share/utils";
 import {NoImage} from "../no-image/no-image.component";
 
-export function CourseCard({name, nodeId, type, children, accountId, courseInfo = {}, loading}) {
+export function CourseCard({name, nodeId, children, accountId, courseInfo = {}, loading}) {
     const {picture, description} = courseInfo;
     const history = useHistory();
 

@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {childrenSorted, getStorage, http, useQuery} from "../../share/utils";
+import {childrenSorted, getWebStorage, http, useQuery} from "../../share/utils";
 import './lesson.component.css';
 import {useSelector} from "react-redux";
 import {selectCourse} from "../../store/reducers/courses.reducer";

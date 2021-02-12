@@ -1,5 +1,3 @@
-console.log(process.env);
-
 const development = {
     API_URL: 'http://localhost:3001/'
 };

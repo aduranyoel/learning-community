@@ -27,10 +27,10 @@ export const childrenSorted = (nodes) => {
         })
 };
 
-export function setStorage(key, value) {
+export function setWebStorage(key, value) {
     localStorage.setItem(key, JSON.stringify(value));
 }
 
-export function getStorage(key) {
+export function getWebStorage(key) {
     return JSON.parse(localStorage.getItem(key));
 }
