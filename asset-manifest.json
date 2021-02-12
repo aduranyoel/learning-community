@@ -1,31 +1,32 @@
 {
   "files": {
-    "main.css": "/learning-community/static/css/main.e6058ee8.chunk.css",
-    "main.js": "/learning-community/static/js/main.7f2a9be1.chunk.js",
-    "main.js.map": "/learning-community/static/js/main.7f2a9be1.chunk.js.map",
-    "runtime-main.js": "/learning-community/static/js/runtime-main.edf60672.js",
-    "runtime-main.js.map": "/learning-community/static/js/runtime-main.edf60672.js.map",
+    "main.css": "/learning-community/static/css/main.7fb41799.chunk.css",
+    "main.js": "/learning-community/static/js/main.bfb61265.chunk.js",
+    "main.js.map": "/learning-community/static/js/main.bfb61265.chunk.js.map",
+    "runtime-main.js": "/learning-community/static/js/runtime-main.5fc0b3c3.js",
+    "runtime-main.js.map": "/learning-community/static/js/runtime-main.5fc0b3c3.js.map",
     "static/css/2.d65fdcc0.chunk.css": "/learning-community/static/css/2.d65fdcc0.chunk.css",
-    "static/js/2.94b5665f.chunk.js": "/learning-community/static/js/2.94b5665f.chunk.js",
-    "static/js/2.94b5665f.chunk.js.map": "/learning-community/static/js/2.94b5665f.chunk.js.map",
-    "static/js/3.737875d5.chunk.js": "/learning-community/static/js/3.737875d5.chunk.js",
-    "static/js/3.737875d5.chunk.js.map": "/learning-community/static/js/3.737875d5.chunk.js.map",
+    "static/js/2.ab0f95a8.chunk.js": "/learning-community/static/js/2.ab0f95a8.chunk.js",
+    "static/js/2.ab0f95a8.chunk.js.map": "/learning-community/static/js/2.ab0f95a8.chunk.js.map",
+    "static/js/3.9efd850b.chunk.js": "/learning-community/static/js/3.9efd850b.chunk.js",
+    "static/js/3.9efd850b.chunk.js.map": "/learning-community/static/js/3.9efd850b.chunk.js.map",
     "index.html": "/learning-community/index.html",
     "static/css/2.d65fdcc0.chunk.css.map": "/learning-community/static/css/2.d65fdcc0.chunk.css.map",
-    "static/css/main.e6058ee8.chunk.css.map": "/learning-community/static/css/main.e6058ee8.chunk.css.map",
-    "static/js/2.94b5665f.chunk.js.LICENSE.txt": "/learning-community/static/js/2.94b5665f.chunk.js.LICENSE.txt",
+    "static/css/main.7fb41799.chunk.css.map": "/learning-community/static/css/main.7fb41799.chunk.css.map",
+    "static/js/2.ab0f95a8.chunk.js.LICENSE.txt": "/learning-community/static/js/2.ab0f95a8.chunk.js.LICENSE.txt",
     "static/media/219px-Definition_of_Free_Cultural_Works_logo_notext.svg.0a9f9783.png": "/learning-community/static/media/219px-Definition_of_Free_Cultural_Works_logo_notext.svg.0a9f9783.png",
     "static/media/backgroud.70f8b048.jpg": "/learning-community/static/media/backgroud.70f8b048.jpg",
     "static/media/camera-solid.f79d7868.svg": "/learning-community/static/media/camera-solid.f79d7868.svg",
     "static/media/play-circle-solid.658d5ba8.svg": "/learning-community/static/media/play-circle-solid.658d5ba8.svg",
     "static/media/search-solid.a8b7c5d7.svg": "/learning-community/static/media/search-solid.a8b7c5d7.svg",
+    "static/media/undraw_empty_xct9.156edb6a.svg": "/learning-community/static/media/undraw_empty_xct9.156edb6a.svg",
     "static/media/undraw_server_down_s4lk.43dea224.svg": "/learning-community/static/media/undraw_server_down_s4lk.43dea224.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.edf60672.js",
+    "static/js/runtime-main.5fc0b3c3.js",
     "static/css/2.d65fdcc0.chunk.css",
-    "static/js/2.94b5665f.chunk.js",
-    "static/css/main.e6058ee8.chunk.css",
-    "static/js/main.7f2a9be1.chunk.js"
+    "static/js/2.ab0f95a8.chunk.js",
+    "static/css/main.7fb41799.chunk.css",
+    "static/js/main.bfb61265.chunk.js"
   ]
 }
