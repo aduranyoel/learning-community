@@ -2,6 +2,7 @@ import React, {useContext, useRef} from 'react';
 import {HomeContext} from "../../context/home.context";
 import {useSelector} from "react-redux";
 import searchSvg from '../../assets/img/search-solid.svg';
+import {paginate} from "../../share/utils";
 
 export function SearchCourses() {
 
@@ -13,11 +14,11 @@ export function SearchCourses() {
     function search(e) {
         e.preventDefault();
         const toSearch = searchRef.current?.value?.trim().toLowerCase();
-        setCourses(courses.filter(c => c.name.toLowerCase().indexOf(toSearch) > -1))
+        setCourses(paginate(courses.filter(c => c.name.toLowerCase().indexOf(toSearch) > -1), {page: 1}))
     }
 
     function handleBlur(e) {
-        if(!e.target.value) setCourses(courses);
+        if (!e.target.value) setCourses(paginate(courses, {page: 1}));
     }
 
     return (

@@ -1,6 +1,6 @@
 import React, {useContext, useEffect, useState} from 'react';
 import {CourseCard} from "../card/course-card.component";
-import {http} from '../../share/utils';
+import {http, paginate} from '../../share/utils';
 import {useDispatch} from "react-redux";
 import {loadCourses} from "../../store/actions/courses.action";
 import serverDown from '../../assets/img/undraw_server_down_s4lk.svg';
@@ -23,7 +23,7 @@ export function Courses() {
                 const {response} = await fetch.json();
                 const coursesRandom = response.sort(() => Math.round(Math.random() * 10) > 5 ? -1 : 1);
                 dispatch(loadCourses(coursesRandom));
-                setCourses(coursesRandom);
+                setCourses(paginate(coursesRandom, {page: 1}));
             } catch (e) {
                 setError(true);
             }
@@ -43,32 +43,28 @@ export function Courses() {
 
                     <div className="row">
                         {
-                            !error && courses && courses.length ? courses.map(
+                            !error && courses
+                                ? courses.length ? courses.map(
                                 course => (
                                     <div key={uuid()}
                                          className="col-xl-3 col-lg-4 col-md-6 d-flex align-items-stretch">
                                         <CourseCard {...course}/>
                                     </div>
-                                )) : null
-                        }
-                        {
-                            !error && courses && !courses.length ?
-                                <img src={empty} style={{width: '22rem', margin: '0 auto'}} alt="server down"/>
+                                ))
+                                : <img src={empty} style={{width: '22rem', margin: '0 auto'}} alt="server down"/>
                                 : null
                         }
                         {
-                            error ?
-                                <img src={serverDown} style={{width: '22rem', margin: '0 auto'}} alt="server down"/>
+                            error
+                                ? <img src={serverDown} style={{width: '22rem', margin: '0 auto'}} alt="server down"/>
                                 : null
                         }
-
                     </div>
 
                 </div>
             </section>
-
             {
-                !error && courses && courses.length ? <Paginator/> : null
+                !error && courses?.length ? <Paginator setCourses={setCourses}/> : null
             }
         </>
     )

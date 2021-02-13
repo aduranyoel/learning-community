@@ -34,3 +34,12 @@ export function setWebStorage(key, value) {
 export function getWebStorage(key) {
     return JSON.parse(localStorage.getItem(key));
 }
+
+export function paginate(data, {page, length = 8}) {
+    const start = (page - 1) * length;
+    return data.slice().slice(start, start + length);
+}
+
+export function range(start, end) {
+    return Array(Math.abs(Math.floor(end - start)) + 1).fill(undefined).map((_, idx) => start + idx);
+}

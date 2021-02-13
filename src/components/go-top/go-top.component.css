@@ -1,0 +1,6 @@
+.back-to-top i {
+    opacity: 0;
+}
+.back-to-top.show i {
+    opacity: 1;
+}

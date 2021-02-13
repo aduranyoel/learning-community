@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {childrenSorted, getWebStorage, http, useQuery} from "../../share/utils";
+import {childrenSorted, http, useQuery} from "../../share/utils";
 import './lesson.component.css';
 import {useSelector} from "react-redux";
 import {selectCourse} from "../../store/reducers/courses.reducer";
@@ -8,6 +8,7 @@ import {Spinner} from "../spinner/spinner.component";
 import {AccordionItemCourse} from "../course-content/accordion-item-course.component";
 import {v4 as uuid} from 'uuid';
 import {Redirect} from "react-router-dom";
+import {GoTop} from "../go-top/go-top.component";
 
 export function Lesson() {
     const query = useQuery();
@@ -77,6 +78,7 @@ export function Lesson() {
                 <div className="row">
                     <div className="col-lg-8 m-auto">
                         <div className="container">
+                            <h2>Content</h2>
                             <div className="accordion" id="accordionCourse">
                                 {
                                     course && Array.isArray(course.children) ?
@@ -104,6 +106,7 @@ export function Lesson() {
                     </div>
                 </div>
             </section>
+            <GoTop/>
         </>
     )
 }

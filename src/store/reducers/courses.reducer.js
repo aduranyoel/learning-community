@@ -22,3 +22,4 @@ export function courses(state = initialState, action) {
 }
 
 export const selectCourse = id => state => state?.courses?.find(c => c.nodeId === id);
+export const selectAllCourses = state => state?.courses;
